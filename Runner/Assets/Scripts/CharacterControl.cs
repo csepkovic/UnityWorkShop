@@ -27,7 +27,7 @@ public class CharacterControl : MonoBehaviour {
         {
             rigidBody.AddForce(new Vector2(-100, 0));
         }
-        transform.position += transform.right;
+        transform.position += transform.right/2;
         if (transform.position.y < -15) {
             SceneManager.LoadScene("Main Game");
         }

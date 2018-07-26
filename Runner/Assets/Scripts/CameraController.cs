@@ -7,22 +7,21 @@ public class CameraController : MonoBehaviour {
     public GameObject player;
     public Vector3 playerCamera;
     public float end;
-    public GameObject[] floorBlocks = new GameObject[225];
+    public float end1;
     float rando;
     float smootherFloat = 0;
     // Use this for initialization
     void Start()
     {
-        rando = Random.Range(0f, 5f) - 1f;
-        for (int i = 0; i < 225; i++)
+        for (int i = 0; i < 450; i++)
         {
-            if (i > 0) {
-                rando = floorBlocks[i - 1].transform.position.y;
-                rando += (Random.Range(0f, 1f)-0.5f);
+            rando = Random.Range(0f, 5f) - 1f;
+            GameObject obj = (GameObject)Instantiate(Resources.Load("Floor Block"), new Vector3(i/2, rando, 0), Quaternion.identity);
+            end = i/2;
+            end1 = i/2;
+            if (i % 2 == 0){
+                GameObject obj1 = (GameObject)Instantiate(Resources.Load("Floor"), new Vector3(i/2, -1.5f, 0f), Quaternion.identity);
             }
-            GameObject obj = (GameObject)Instantiate(Resources.Load("Floor Block"), new Vector3(i, rando, 0), Quaternion.identity);
-            end = i;
-            floorBlocks[i] = obj;
         }
         player = GameObject.FindGameObjectsWithTag("Player")[0];
     }

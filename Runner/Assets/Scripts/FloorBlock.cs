@@ -15,7 +15,7 @@ public class FloorBlock : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (transform.position.y < -10){
-            cameraController.end++;
+            cameraController.end+=0.5f;
             transform.rotation = new Quaternion(0, 0, 0, 0);
             transform.position = new Vector3(cameraController.end, Random.Range(0f, 5f) - 1f, 0);
             rb2D.gravityScale = 0f;

@@ -11,6 +11,6 @@ public class Light : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += transform.forward;
+        transform.localPosition += transform.forward/2;
 	}
 }

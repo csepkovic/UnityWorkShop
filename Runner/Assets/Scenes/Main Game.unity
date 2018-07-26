@@ -143,8 +143,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.116179585, y: 2.1082277}
-  m_Size: {x: 1.1294541, y: 13.11462}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.1294541, y: 45.76098}
   m_Direction: 0
 --- !u!33 &38053905
 MeshFilter:
@@ -202,9 +202,9 @@ Light:
   m_GameObject: {fileID: 347723947}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 0
+  m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 50
+  m_Intensity: 40
   m_Range: 68.560974
   m_SpotAngle: 70.85968
   m_CookieSize: 10
@@ -223,7 +223,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -237,13 +237,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 347723947}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -7.989999, y: 1, z: -1.6299998}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.70710677}
+  m_LocalPosition: {x: -8.45, y: 11.63, z: -1.6299998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!114 &347723950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,13 +326,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: -0, y: 0.06953309, z: -0, w: 0.9975797}
+  m_LocalRotation: {x: -0, y: 0.08115342, z: -0, w: 0.9967016}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 7.9740005, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 9.31, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,6 +348,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerCamera: {x: 0, y: 0, z: 0}
   end: 0
+  end1: 0
 --- !u!1001 &1545342856
 Prefab:
   m_ObjectHideFlags: 0

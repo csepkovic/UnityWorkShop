@@ -11,6 +11,6 @@ public class Barrier : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += transform.right;
+        transform.position += transform.right/2;
 	}
 }
